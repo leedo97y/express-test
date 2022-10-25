@@ -13,6 +13,11 @@ const sampleSchema = new Schema({
   birthday: Number,
 });
 
+// 스키마 - 모델 생성
 const Sample = mongoose.model("Sample", sampleSchema);
 // 스키마로 만든 것을 객체로 구현하기 위한 것이 몽구스에 있는 model임
 // 여기서는 Sample이라는 이름으로 객체를 만드는 것
+
+// 스키마 - 모델 내보내기
+module.exports = { Sample };
+// 모델만 넣어줄때 중괄호를 써서 Sample을 해준다.
